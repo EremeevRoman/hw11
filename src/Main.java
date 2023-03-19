@@ -2,17 +2,17 @@ public class Main {
 
 
     public static void main(String[] args) {
-        newYear(2021);
+        checkIfYearIsLeap(2021);
         int operatingSystem = 1;
         int year = 2016;
-        int result = count(operatingSystem, year);
+        int result = printOsVersion(operatingSystem, year);
         distance(95);
 
 
     }
 
 
-    public static void newYear(int year) {
+    public static void checkIfYearIsLeap(int year) {
 
         System.out.println("Задача 1");
         if (year % 4 == 0 && year % 400 != 0 || year % 100 == 0) {
@@ -23,7 +23,7 @@ public class Main {
         }
     }
 
-    public static int count(int operatingSystem, int year) {
+    public static int printOsVersion(int operatingSystem, int year) {
         System.out.println("Задача 2");
         if (year < 2015) {
             if (operatingSystem == 0) {
@@ -43,7 +43,7 @@ public class Main {
 
     }
 
-    public static void distance(int deliveryDistance) {
+    public static int distance(int deliveryDistance) {
         System.out.println("Задача 3");
         if (deliveryDistance > 0 && deliveryDistance < 20) {
             System.out.println("Потребуется км " + deliveryDistance + " доставка занимает сутки");
@@ -53,6 +53,8 @@ public class Main {
             System.out.println("Потребуется км " + deliveryDistance + " доставка занимает трое суток");
         } else {
             System.out.println(" Доставки нет");
+
         }
+        return 0;
     }
 }
