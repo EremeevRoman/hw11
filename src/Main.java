@@ -45,16 +45,25 @@ public class Main {
 
     public static int distance(int deliveryDistance) {
         System.out.println("Задача 3");
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int d = -1;
         if (deliveryDistance > 0 && deliveryDistance < 20) {
-            System.out.println("Потребуется км " + deliveryDistance + " доставка занимает сутки");
+            System.out.println("Потребуется км " + deliveryDistance + " доставка занимает " + a + " сутки");
+            return a;
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется км " + deliveryDistance + " доставка занимает двое суток");
+            System.out.println("Потребуется км " + deliveryDistance + " доставка занимает " + b + " суток");
+            return b;
         } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
-            System.out.println("Потребуется км " + deliveryDistance + " доставка занимает трое суток");
+            System.out.println("Потребуется км " + deliveryDistance + " доставка занимает " + c + " суток");
+            return c;
         } else {
             System.out.println(" Доставки нет");
 
-        }
-        return 0;
-    }
-}
+        } return d;
+
+
+
+
+}}
